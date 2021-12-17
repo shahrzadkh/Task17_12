@@ -1,9 +1,9 @@
 import os
+__location__ = os.getcwd()
+print(__location__)
 import sys
-sys.path.insert(1, '/Users/skharabian/sciebo/CV_2020/Interviews/Zühlke/')
-
-
-from Code.utils import DataProvider,CV_Regr
+sys.path.insert(1, '/Users/skharabian/sciebo/CV_2020/Interviews/Zühlke/sharing/')
+from utils import DataProvider,CV_Regr
 import pickle
 import json
 
@@ -13,9 +13,9 @@ def run_example():
 
 
     # Where to save the data:
-    saving_dir_fullpath = '/Users/skharabian/Downloads/'
+    saving_dir_fullpath = '/Users/skharabian/sciebo/CV_2020/Interviews/Zühlke/sharing/results'
     data_file= os.path.join(saving_dir_fullpath, 'data.pkl')
-    with open('/Users/skharabian/Downloads/data.p', 'wb') as fp:
+    with open(data_file, 'wb') as fp:
         pickle.dump(data, fp, protocol=pickle.HIGHEST_PROTOCOL)
 
 
@@ -70,3 +70,8 @@ def run_example():
     #loaded_model = pickle.load(open(filename, 'rb'))
 
     return os.path.join(saving_dir_fullpath, 'MODEL_INFO.json')
+
+
+if __name__ == '__main__':
+    log_file = run_example()
+    print(log_file)
