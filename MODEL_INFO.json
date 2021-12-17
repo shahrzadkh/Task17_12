@@ -1,0 +1,53 @@
+{
+    "data_fullpath": "/Users/skharabian/sciebo/CV_2020/Interviews/Z\u00fchlke/sharing/results/data.pkl",
+    "estimator_info": {
+        "lasso_reg": {
+            "model_fullpath": "/Users/skharabian/sciebo/CV_2020/Interviews/Z\u00fchlke/sharing/results/lasso_reg.pkl",
+            "model_parameters": "Pipeline(steps=[('standardizing', StandardScaler()),\n                ('Lasso_obj', Lasso(alpha=0.008531678524172814))])",
+            "test_scores": {
+                "mae": 0.7620777176140767,
+                "r2": -0.001478229731640024
+            },
+            "training_scores": {
+                "mae": 0.7620777176140767,
+                "r2": -0.001478229731640024
+            }
+        },
+        "lassocv_reg": {
+            "model_fullpath": "/Users/skharabian/sciebo/CV_2020/Interviews/Z\u00fchlke/sharing/results/lassocv_reg.pkl",
+            "model_parameters": "Pipeline(steps=[('standardizing', StandardScaler()),\n                ('LassoCV_obj', LassoCV(cv=3))])",
+            "test_scores": {
+                "mae": 0.7622386942939431,
+                "r2": -0.0019559353621414477
+            },
+            "training_scores": {
+                "mae": 0.7622386942939431,
+                "r2": -0.0019559353621414477
+            }
+        },
+        "linear_reg": {
+            "model_fullpath": "/Users/skharabian/sciebo/CV_2020/Interviews/Z\u00fchlke/sharing/results/linear_reg.pkl",
+            "model_parameters": "Pipeline(steps=[('standardizing', StandardScaler()),\n                ('Linear_Reg', LinearRegression())])",
+            "test_scores": {
+                "mae": 0.7623284221481638,
+                "r2": -0.002159353512097395
+            },
+            "training_scores": {
+                "mae": 0.7623284221481638,
+                "r2": -0.002159353512097395
+            }
+        },
+        "randomforest_reg": {
+            "model_fullpath": "/Users/skharabian/sciebo/CV_2020/Interviews/Z\u00fchlke/sharing/results/randomforest_reg.pkl",
+            "model_parameters": "Pipeline(steps=[('standardizing', StandardScaler()),\n                ('RF_obj',\n                 RandomForestRegressor(n_estimators=20, random_state=0))])",
+            "test_scores": {
+                "mae": 0.7821700302385132,
+                "r2": -0.09227241279037401
+            },
+            "training_scores": {
+                "mae": 0.7821700302385132,
+                "r2": -0.09227241279037401
+            }
+        }
+    }
+}
